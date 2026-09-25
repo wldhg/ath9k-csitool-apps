@@ -4,7 +4,7 @@ This repository contains modified csitool-apps.
 
 This tool only supports ath9k-based CSI collection and you must install the modified kernel for csitool to work before run these apps.
 
-These apps are tested on BPI-R2 device with this [modified kernel for BPI-R2](https://github.com/wldh-g/ath9k-csitool-r2).
+These apps are tested on BPI-R2 device with this [modified kernel for BPI-R2](https://github.com/wldhg/ath9k-csitool-r2).
 
 ### How To Record Packets
 
@@ -13,7 +13,7 @@ These apps are tested on BPI-R2 device with this [modified kernel for BPI-R2](ht
 Before contiune, install `libnl-3`, `libnl-3-dev`, `isc-dhcp-server`.
 
 ```sh
-git clone https://github.com/wldh-g/ath9k-csitool-apps.git --recurse-submodules
+git clone https://github.com/wldhg/ath9k-csitool-apps.git --recurse-submodules
 cd ath9k-csitool-apps/injector
 make -j4 # Build injector and hostapd
 ./load.sh -h # Prints help message
@@ -31,7 +31,7 @@ To turn off dhcp server and hostapd, unload the injector:
 ##### Receiver
 
 ```sh
-git clone https://github.com/wldh-g/ath9k-csitool-apps.git
+git clone https://github.com/wldhg/ath9k-csitool-apps.git
 cd ath9k-csitool-apps/receiver
 make # Build logger
 ./connect.sh # Do this after each load at transmitter
